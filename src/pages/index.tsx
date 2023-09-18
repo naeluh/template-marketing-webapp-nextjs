@@ -39,15 +39,11 @@ export const getServerSideProps = async ({ locale, query }: NextPageContext) => 
     const content = page?.pageContent;
     const extraSection = page?.extraSectionCollection?.items;
 
-    console.log(extraSection);
-
     await Promise.all([
       ...prefetchPromiseArr({ inputArr: topSection, locale, queryClient }),
       ...prefetchPromiseArr({ inputArr: extraSection, locale, queryClient }),
       ...prefetchPromiseArr({ inputArr: [content], locale, queryClient }),
     ]);
-
-    console.log(queryClient);
 
     return {
       props: {

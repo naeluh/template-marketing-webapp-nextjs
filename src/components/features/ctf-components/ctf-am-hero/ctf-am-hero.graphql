@@ -7,9 +7,11 @@ fragment AmHeroFields on AmHero {
   subHeaderCopy
   ctaCopy
   ctaTargetLink
-	backgroundImage{
-    fileName,
-    url
+  featuredImage {
+    ...AssetFields
+  }
+  backgroundImage {
+    ...AssetFields
   }
 }
 

@@ -1,8 +1,16 @@
 import * as Types from '../../../../../lib/__generated/graphql.types';
 
+import { AssetFieldsFragment } from '../../ctf-asset/__generated/ctf-asset.generated';
+import { AssetFieldsFragmentDoc } from '../../ctf-asset/__generated/ctf-asset.generated';
 import { useQuery, UseQueryOptions } from '@tanstack/react-query';
 import { customFetcher } from '@src/lib/fetchConfig';
-export type AmHeroFieldsFragment = { __typename: 'AmHero', headerCopy?: string | null, subHeaderCopy?: string | null, ctaCopy?: string | null, ctaTargetLink?: string | null, sys: { __typename?: 'Sys', id: string }, backgroundImage?: { __typename?: 'Asset', fileName?: string | null, url?: string | null } | null };
+export type AmHeroFieldsFragment = { __typename: 'AmHero', headerCopy?: string | null, subHeaderCopy?: string | null, ctaCopy?: string | null, ctaTargetLink?: string | null, sys: { __typename?: 'Sys', id: string }, featuredImage?: (
+    { __typename?: 'Asset' }
+    & AssetFieldsFragment
+  ) | null, backgroundImage?: (
+    { __typename?: 'Asset' }
+    & AssetFieldsFragment
+  ) | null };
 
 export type CtfAmHeroQueryVariables = Types.Exact<{
   id: Types.Scalars['String'];
@@ -26,9 +34,11 @@ export const AmHeroFieldsFragmentDoc = `
   subHeaderCopy
   ctaCopy
   ctaTargetLink
+  featuredImage {
+    ...AssetFields
+  }
   backgroundImage {
-    fileName
-    url
+    ...AssetFields
   }
 }
     `;
@@ -38,7 +48,8 @@ export const CtfAmHeroDocument = `
     ...AmHeroFields
   }
 }
-    ${AmHeroFieldsFragmentDoc}`;
+    ${AmHeroFieldsFragmentDoc}
+${AssetFieldsFragmentDoc}`;
 export const useCtfAmHeroQuery = <
       TData = CtfAmHeroQuery,
       TError = unknown

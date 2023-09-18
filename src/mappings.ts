@@ -42,6 +42,16 @@ export const componentMap = {
       module => module.AmHero,
     ),
   ),
+  AmHeroBlock: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-am-hero-block/ctf-am-hero-block').then(
+      module => module.AmHeroBlock,
+    ),
+  ),
+  AmLeadForm: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-lead-form/ctf-lead-form').then(
+      module => module.CtfLeadForm,
+    ),
+  ),
   AmCtaFeatureBlock: dynamic(() =>
     import(
       '@src/components/features/ctf-components/ctf-cta-feature-block/ctf-cta-feature-block'
@@ -119,6 +129,16 @@ export const componentGqlMap = {
   AmHero: dynamic(() =>
     import('@src/components/features/ctf-components/ctf-am-hero/ctf-am-hero-gql').then(
       module => module.CtfAmHeroGql,
+    ),
+  ),
+  AmHeroBlock: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-am-hero-block/ctf-am-hero-block-gql').then(
+      module => module.CtfAmHeroBlockGql,
+    ),
+  ),
+  AmLeadForm: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-lead-form/ctf-lead-form-gql').then(
+      module => module.CtfLeadFormGql,
     ),
   ),
   AmCtaFeatureBlock: dynamic(() =>

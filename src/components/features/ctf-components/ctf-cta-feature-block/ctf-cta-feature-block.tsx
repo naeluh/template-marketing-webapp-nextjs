@@ -12,7 +12,6 @@ export const CtaFeatureBlock = (props: AmCtaFeatureBlockieldsFragment) => {
     ctaTargetLink,
     featuredMedia,
   } = props;
-  console.log(backgroundImage?.url);
   return (
     <div id="block-am-who-we-are">
       <div className="who-we-are" id="who_we_are">

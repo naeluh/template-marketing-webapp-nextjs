@@ -1,0 +1,29 @@
+.pagination li button {
+  border-radius: 0;
+  transform: none !important;
+}
+
+.splide-navigation ul {
+  flex: 0 0 calc(100% - 100px);
+  position: relative;
+}
+
+.splide-arrows {
+  flex: 0 0 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.splide-arrow {
+  position: relative !important;
+  top: initial!important;
+  opacity: 1!important;
+  left: initial!important;
+  right: initial!important;
+  transform: translateY(0%)!important;
+}
+
+.splide-arrow-prev {
+  transform: rotate(180deg)!important;
+}

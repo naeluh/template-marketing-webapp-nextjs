@@ -19,8 +19,7 @@ export const ValueProp = (props: AmValuePropFieldsFragment) => {
     ctaCopy,
     ctaTargetLink,
   } = props;
-  console.log(supplementalNavigation);
-  const [showing, setShowing] = React.useState(true);
+  const [showing, setShowing] = React.useState('expertise');
   return (
     <div id="block-am-why-am">
       <div className="why-am-how-help">
@@ -56,15 +55,21 @@ export const ValueProp = (props: AmValuePropFieldsFragment) => {
             <div className="how-help-client-main">
               <div className="how-help-client-vocabulary">
                 <div
-                  onClick={() => setShowing(!showing)}
-                  className="how-help-client-vocabulary-item is-active"
+                  onClick={() => setShowing('expertise')}
+                  className={[
+                    'how-help-client-vocabulary-item',
+                    showing === 'expertise' ? 'is-active' : '',
+                  ].join(' ')}
                   data-vid="expertise"
                 >
                   {supplementalNavigationTitleLeft}
                 </div>
                 <div
-                  onClick={() => setShowing(!showing)}
-                  className="how-help-client-vocabulary-item"
+                  onClick={() => setShowing('industries')}
+                  className={[
+                    'how-help-client-vocabulary-item',
+                    showing === 'industries' ? 'is-active' : '',
+                  ].join(' ')}
                   data-vid="industries"
                 >
                   {supplementalNavigationTitleRight}
@@ -81,7 +86,7 @@ export const ValueProp = (props: AmValuePropFieldsFragment) => {
                         className="how-help-client-list-item"
                         data-tid={id}
                         data-type="industries"
-                        style={{ display: showing ? 'block' : 'none' }}
+                        style={{ display: showing === 'industries' ? 'block' : 'none' }}
                       >
                         {key}
                       </a>
@@ -97,22 +102,12 @@ export const ValueProp = (props: AmValuePropFieldsFragment) => {
                         className="how-help-client-list-item"
                         data-tid={id}
                         data-type="expertise"
-                        style={{ display: showing ? 'none' : 'block' }}
+                        style={{ display: showing === 'expertise' ? 'block' : 'none' }}
                       >
                         {key}
                       </a>
                     );
                   })}
-              </div>
-              <div className="how-help-client-navigation" style={{ opacity: 1 }}>
-                <div className="how-help-client-page">
-                  <div className="how-help-client-page-item active" data-page={1} />
-                  <div className="how-help-client-page-item" data-page={2} />
-                </div>
-                <div className="how-help-client-arrow">
-                  <div className="how-help-client-arrow-prev" data-move="prev" />
-                  <div className="how-help-client-arrow-next" data-move="next" />
-                </div>
               </div>
             </div>
           </div>

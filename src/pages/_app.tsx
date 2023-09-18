@@ -15,7 +15,11 @@ import { queryConfig } from '@src/lib/gql-client';
 import colorfulTheme from '@src/theme';
 import contentfulConfig from 'contentful.config';
 import nextI18nConfig from 'next-i18next.config';
-import '@src/pages/style.css';
+import '@splidejs/react-splide/css/core';
+// import '@src/pages/a.css';
+import '@src/pages/b.css';
+import '@src/pages/c.css';
+import '@src/pages/d.css';
 
 const LivePreviewProvider = ({ children }) => {
   const { previewActive, locale } = useContentfulContext();

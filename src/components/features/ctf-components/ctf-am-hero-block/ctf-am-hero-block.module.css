@@ -1,0 +1,31 @@
+.hero-slide {
+  max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pagination li button {
+  border-radius: 0;
+  transform: none;
+}
+
+.splide-navigation ul {
+  flex: 0 0 calc(100% - 100px);
+  position: relative;
+}
+
+.splide-navigation > div {
+  flex: 0 0 100px;
+  width: 100px;
+  position: relative;
+  display: flex;
+}
+
+.splide-arrow {
+  position: relative;
+  transform: none;
+  top: initial;
+  opacity: 1;
+  left: initial;
+  right: initial;
+}

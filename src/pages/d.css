@@ -1,0 +1,30 @@
+.node-type-expertise-article .field--name-field-taxonomy-grid > .field__items > .field__item {
+ float: unset;
+}
+
+.node-type-expertise-article .field--name-field-taxonomy-grid .field__items .field__item {
+ float: unset;
+}
+
+.node-type-company-documents .node--company-documents .field_company_docs_files .file--x-office-document {
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  letter-spacing: -0.04em;
+
+}
+
+.paragraph-cell-doc .file--x-office-document a {
+  display: block;
+  font-family: "HelveticaNeueW01-55Roma", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: -0.04em;
+  color: #666;
+  transition: color 0.2s ease-out;
+  padding: 2.5rem 10px 2.5rem 0;
+}
+
+.paragraph-cell-doc .file--x-office-document a:hover {
+  color: #0085ca;
+}

@@ -1,0 +1,14 @@
+fragment AmCtfLeadFormFields on AmLeadForm {
+  __typename
+  sys {
+    id
+  }
+  headerText
+  leadFormEmbedCode
+}
+
+query CtfLeadForm($id: String!, $locale: String, $preview: Boolean) {
+  amLeadForm(id: $id, locale: $locale, preview: $preview) {
+    ...AmCtfLeadFormFields
+  }
+}

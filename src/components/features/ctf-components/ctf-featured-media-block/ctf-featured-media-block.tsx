@@ -2,6 +2,7 @@ import React from 'react';
 import { useContentfulInspectorMode } from '@contentful/live-preview/react';
 import LayoutContext, { defaultLayout, useLayoutContext } from '@src/layout-context';
 import { AmFeaturedMediaBlockFieldsFragment } from './__generated/ctf-featured-media-block.generated';
+
 const splitArray = array => {
   const halfwayThrough = Math.floor(array.length / 2);
   const arrayFirstHalf = array.slice(0, halfwayThrough);
@@ -23,7 +24,7 @@ export const FeaturedMediaBlock = (props: AmFeaturedMediaBlockFieldsFragment) =>
 
   const [list, setList] = React.useState<any>({ items: collection });
   const [featured, setFeatured] = React.useState<any>(featuredPodcast);
-  const [active, setActive] = React.useState('all');
+  const [active, setActive] = React.useState('media');
   return (
     <div id="block-quicktabs-block-front-featured">
       <div
@@ -42,7 +43,7 @@ export const FeaturedMediaBlock = (props: AmFeaturedMediaBlockFieldsFragment) =>
                   aria-selected="false"
                   id="quicktabs-tab-front_featured-0"
                   tabIndex={-1}
-                  className={['all', active === 'all' ? 'active' : ''].join(' ')}
+                  className={['all', active === 'media' ? 'active' : ''].join(' ')}
                 >
                   <a
                     href="#"
@@ -50,7 +51,7 @@ export const FeaturedMediaBlock = (props: AmFeaturedMediaBlockFieldsFragment) =>
                       event.preventDefault();
                       setList({ items: collection });
                       setFeatured(featuredPodcast);
-                      setActive('all');
+                      setActive('media');
                     }}
                     className="quicktabs-loaded"
                     data-quicktabs-tab-index={0}
@@ -112,7 +113,7 @@ export const FeaturedMediaBlock = (props: AmFeaturedMediaBlockFieldsFragment) =>
         <div className="quicktabs-main" id="quicktabs-container-front_featured">
           <div
             id="quicktabs-tabpage-front_featured-0"
-            className="quicktabs-tabpage quicktabs-hide"
+            className="quicktabs-tabpage"
             role="tabpanel"
             aria-labelledby="quicktabs-tab-front_featured-0"
             tabIndex={0}
@@ -202,7 +203,7 @@ export const FeaturedMediaBlock = (props: AmFeaturedMediaBlockFieldsFragment) =>
                   </div>
                   <div className="view-front-featured-link">
                     <div className="more-link">
-                      <a href="/videos-and-podcasts">All media</a>
+                      <a href="/videos-and-podcasts">All {active}</a>
                     </div>
                   </div>
                 </div>

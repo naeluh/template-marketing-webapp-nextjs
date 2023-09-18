@@ -1,0 +1,35 @@
+.align-center {
+ display: table;
+}
+
+article[data-entity-embed-display-settings="body_section_thumbnail_200px_h"] img {
+  margin-top: 6px;
+}
+
+article.align-center img {
+  margin: 0px;
+}
+
+.page-node-59181 .am-layout-single {
+  padding: 0 20px;
+}
+@media (min-width: 580px) {
+  .page-node-59181 .am-layout-single {
+    padding: 0 100px;
+  }
+}
+@media (min-width: 960px) {
+  .page-node-59181 .am-layout-single {
+    padding: 0 200px;
+  }
+}
+@media (min-width: 1140px) {
+  .page-node-59181 .am-layout-single {
+    padding: 0 300px;
+  }
+}
+@media (min-width: 1280px) {
+  .page-node-59181 .am-layout-single {
+    padding: 0 400px;
+  }
+}

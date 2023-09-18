@@ -1,6 +1,6 @@
 import * as Types from '../../../../../lib/__generated/graphql.types';
 
-import { ComponentReferenceFields_AmCtaFeatureBlock_Fragment, ComponentReferenceFields_AmFeaturedInsights_Fragment, ComponentReferenceFields_AmFeaturedMedia_Fragment, ComponentReferenceFields_AmFeaturedMediaBlock_Fragment, ComponentReferenceFields_AmHero_Fragment, ComponentReferenceFields_AmInsights_Fragment, ComponentReferenceFields_AmPodcasts_Fragment, ComponentReferenceFields_AmTestimonial_Fragment, ComponentReferenceFields_AmTestimonialsBlock_Fragment, ComponentReferenceFields_AmValueProp_Fragment, ComponentReferenceFields_AmVideos_Fragment, ComponentReferenceFields_ComponentCta_Fragment, ComponentReferenceFields_ComponentDuplex_Fragment, ComponentReferenceFields_ComponentHeroBanner_Fragment, ComponentReferenceFields_ComponentInfoBlock_Fragment, ComponentReferenceFields_ComponentProductTable_Fragment, ComponentReferenceFields_ComponentQuote_Fragment, ComponentReferenceFields_ComponentTextBlock_Fragment, ComponentReferenceFields_FooterMenu_Fragment, ComponentReferenceFields_InsightsPage_Fragment, ComponentReferenceFields_MenuGroup_Fragment, ComponentReferenceFields_NavigationMenu_Fragment, ComponentReferenceFields_NewsArticle_Fragment, ComponentReferenceFields_Page_Fragment, ComponentReferenceFields_Seo_Fragment, ComponentReferenceFields_TopicBusinessInfo_Fragment, ComponentReferenceFields_TopicPerson_Fragment, ComponentReferenceFields_TopicProduct_Fragment, ComponentReferenceFields_TopicProductFeature_Fragment, ComponentReferenceFields_WhyAmBlock_Fragment } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
+import { ComponentReferenceFields_AmCtaFeatureBlock_Fragment, ComponentReferenceFields_AmFeaturedInsights_Fragment, ComponentReferenceFields_AmFeaturedMedia_Fragment, ComponentReferenceFields_AmFeaturedMediaBlock_Fragment, ComponentReferenceFields_AmHero_Fragment, ComponentReferenceFields_AmHeroBlock_Fragment, ComponentReferenceFields_AmInsights_Fragment, ComponentReferenceFields_AmLeadForm_Fragment, ComponentReferenceFields_AmPodcasts_Fragment, ComponentReferenceFields_AmTestimonial_Fragment, ComponentReferenceFields_AmTestimonialsBlock_Fragment, ComponentReferenceFields_AmValueProp_Fragment, ComponentReferenceFields_AmVideos_Fragment, ComponentReferenceFields_ComponentCta_Fragment, ComponentReferenceFields_ComponentDuplex_Fragment, ComponentReferenceFields_ComponentHeroBanner_Fragment, ComponentReferenceFields_ComponentInfoBlock_Fragment, ComponentReferenceFields_ComponentProductTable_Fragment, ComponentReferenceFields_ComponentQuote_Fragment, ComponentReferenceFields_ComponentTextBlock_Fragment, ComponentReferenceFields_FooterMenu_Fragment, ComponentReferenceFields_InsightsPage_Fragment, ComponentReferenceFields_MenuGroup_Fragment, ComponentReferenceFields_NavigationMenu_Fragment, ComponentReferenceFields_NewsArticle_Fragment, ComponentReferenceFields_Page_Fragment, ComponentReferenceFields_Seo_Fragment, ComponentReferenceFields_TopicBusinessInfo_Fragment, ComponentReferenceFields_TopicPerson_Fragment, ComponentReferenceFields_TopicProduct_Fragment, ComponentReferenceFields_TopicProductFeature_Fragment, ComponentReferenceFields_WhyAmBlock_Fragment } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
 import { AssetFieldsFragment } from '../../ctf-asset/__generated/ctf-asset.generated';
 import { ComponentReferenceFieldsFragmentDoc } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
 import { AssetFieldsFragmentDoc } from '../../ctf-asset/__generated/ctf-asset.generated';
@@ -22,8 +22,14 @@ export type TextBlockFieldsFragment = { __typename: 'ComponentTextBlock', headli
           { __typename?: 'AmHero' }
           & ComponentReferenceFields_AmHero_Fragment
         ) | (
+          { __typename?: 'AmHeroBlock' }
+          & ComponentReferenceFields_AmHeroBlock_Fragment
+        ) | (
           { __typename?: 'AmInsights' }
           & ComponentReferenceFields_AmInsights_Fragment
+        ) | (
+          { __typename?: 'AmLeadForm' }
+          & ComponentReferenceFields_AmLeadForm_Fragment
         ) | (
           { __typename?: 'AmPodcasts' }
           & ComponentReferenceFields_AmPodcasts_Fragment
