@@ -60,6 +60,8 @@ export const getServerSideProps = async ({ locale, params, query }: CustomNextPa
       ...prefetchPromiseArr({ inputArr: [content], locale, queryClient }),
     ]);
 
+    console.log(content, slug, locale, preview);
+
     if (content) {
       const { __typename, sys } = content;
 

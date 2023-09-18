@@ -20,6 +20,7 @@ import '@splidejs/splide/dist/css/splide-core.min.css';
 import '@src/pages/b.css';
 import '@src/pages/c.css';
 import '@src/pages/d.css';
+import '@src/pages/style.css';
 
 const LivePreviewProvider = ({ children }) => {
   const { previewActive, locale } = useContentfulContext();

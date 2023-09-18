@@ -128,7 +128,7 @@ export const AmHeroBlock = (props: AmHeroBlockFieldsFragment) => {
               </div>
             </div>
           </Splide>
-          <div className="scroll-down fixed">
+          <div className="scroll-down">
             <div>Scroll Down</div>
             <img
               src="https://www.alvarezandmarsal.com/themes/custom/am/images/icons/arrow-right-white-64.png"
