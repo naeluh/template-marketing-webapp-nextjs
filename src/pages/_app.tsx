@@ -15,6 +15,11 @@ import { queryConfig } from '@src/lib/gql-client';
 import colorfulTheme from '@src/theme';
 import contentfulConfig from 'contentful.config';
 import nextI18nConfig from 'next-i18next.config';
+import '@splidejs/splide/dist/css/splide-core.min.css';
+// import '@src/pages/a.css';
+import '@src/pages/b.css';
+import '@src/pages/c.css';
+import '@src/pages/d.css';
 import '@src/pages/style.css';
 
 const LivePreviewProvider = ({ children }) => {

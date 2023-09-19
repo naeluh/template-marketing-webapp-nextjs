@@ -1,0 +1,21 @@
+fragment AmTestimonialFields on AmTestimonial {
+  __typename
+  sys {
+    id
+  }
+  testimonialBody
+  witness
+  witnessTitle
+  featuredMedia {
+    ...AssetFields
+  }
+  backgroundImage {
+    ...AssetFields
+  }
+}
+
+query CtfTestimonial($id: String!, $locale: String, $preview: Boolean) {
+  amTestimonial(id: $id, locale: $locale, preview: $preview) {
+    ...AmTestimonialFields
+  }
+}

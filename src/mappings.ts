@@ -37,6 +37,51 @@ export const componentMap = {
       module => module.CtfAmWhyAm,
     ),
   ),
+  AmHero: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-am-hero/ctf-am-hero').then(
+      module => module.AmHero,
+    ),
+  ),
+  AmHeroBlock: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-am-hero-block/ctf-am-hero-block').then(
+      module => module.AmHeroBlock,
+    ),
+  ),
+  AmLeadForm: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-lead-form/ctf-lead-form').then(
+      module => module.CtfLeadForm,
+    ),
+  ),
+  AmCtaFeatureBlock: dynamic(() =>
+    import(
+      '@src/components/features/ctf-components/ctf-cta-feature-block/ctf-cta-feature-block'
+    ).then(module => module.CtaFeatureBlock),
+  ),
+  AmFeaturedMediaBlock: dynamic(() =>
+    import(
+      '@src/components/features/ctf-components/ctf-featured-media-block/ctf-featured-media-block'
+    ).then(module => module.FeaturedMediaBlock),
+  ),
+  AmFeaturedInsights: dynamic(() =>
+    import(
+      '@src/components/features/ctf-components/ctf-featured-insights/ctf-featured-insights'
+    ).then(module => module.FeaturedInsights),
+  ),
+  AmTestimonial: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-testimonial/ctf-testimonial').then(
+      module => module.Testimonial,
+    ),
+  ),
+  AmTestimonialsBlock: dynamic(() =>
+    import(
+      '@src/components/features/ctf-components/ctf-testimonials-block/ctf-testimonials-block'
+    ).then(module => module.TestimonialsBlock),
+  ),
+  AmValueProp: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-value-prop/ctf-value-prop').then(
+      module => module.ValueProp,
+    ),
+  ),
   ComponentInfoBlock: dynamic(() =>
     import('@src/components/features/ctf-components/ctf-info-block/ctf-info-block').then(
       module => module.CtfInfoBlock,
@@ -79,6 +124,51 @@ export const componentGqlMap = {
   WhyAmBlock: dynamic(() =>
     import('@src/components/features/ctf-components/ctf-am-why-am/ctf-am-why-am-gql').then(
       module => module.CtfAmWhyAmGql,
+    ),
+  ),
+  AmHero: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-am-hero/ctf-am-hero-gql').then(
+      module => module.CtfAmHeroGql,
+    ),
+  ),
+  AmHeroBlock: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-am-hero-block/ctf-am-hero-block-gql').then(
+      module => module.CtfAmHeroBlockGql,
+    ),
+  ),
+  AmLeadForm: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-lead-form/ctf-lead-form-gql').then(
+      module => module.CtfLeadFormGql,
+    ),
+  ),
+  AmCtaFeatureBlock: dynamic(() =>
+    import(
+      '@src/components/features/ctf-components/ctf-cta-feature-block/ctf-cta-feature-block-gql'
+    ).then(module => module.CtfCtaFeatureBlockGql),
+  ),
+  AmFeaturedMediaBlock: dynamic(() =>
+    import(
+      '@src/components/features/ctf-components/ctf-featured-media-block/ctf-featured-media-block-gql'
+    ).then(module => module.CtfFeaturedMediaBlockGql),
+  ),
+  AmFeaturedInsights: dynamic(() =>
+    import(
+      '@src/components/features/ctf-components/ctf-featured-insights/ctf-featured-insights-gql'
+    ).then(module => module.CtfFeaturedInsightsGql),
+  ),
+  AmTestimonial: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-testimonial/ctf-testimonial-gql').then(
+      module => module.CtfTestimonialGql,
+    ),
+  ),
+  AmTestimonialsBlock: dynamic(() =>
+    import(
+      '@src/components/features/ctf-components/ctf-testimonials-block/ctf-testimonials-block-gql'
+    ).then(module => module.CtfTestimonialsBlockGql),
+  ),
+  AmValueProp: dynamic(() =>
+    import('@src/components/features/ctf-components/ctf-value-prop/ctf-value-prop-gql').then(
+      module => module.CtfValuePropGql,
     ),
   ),
   ComponentInfoBlock: dynamic(() =>

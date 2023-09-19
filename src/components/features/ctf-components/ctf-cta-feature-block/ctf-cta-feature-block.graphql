@@ -1,0 +1,22 @@
+fragment AmCtaFeatureBlockields on AmCtaFeatureBlock {
+  __typename
+  sys {
+    id
+  }
+  headline
+  bodyCopy
+  backgroundImage {
+    ...AssetFields
+  }
+  ctaCopy
+  ctaTargetLink
+  featuredMedia {
+    ...AssetFields
+  }
+}
+
+query CtfCtaFeatureBlock($id: String!, $locale: String, $preview: Boolean) {
+  amCtaFeatureBlock(id: $id, locale: $locale, preview: $preview) {
+    ...AmCtaFeatureBlockields
+  }
+}

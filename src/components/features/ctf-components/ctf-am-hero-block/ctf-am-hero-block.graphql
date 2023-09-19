@@ -1,0 +1,17 @@
+fragment AmHeroBlockFields on AmHeroBlock {
+  __typename
+  sys {
+    id
+  }
+  herosCollection(limit: 3) {
+    items {
+      ...AmHeroFields
+    }
+  }
+}
+
+query CtfAmHeroBlock($id: String!, $locale: String, $preview: Boolean) {
+  amHeroBlock(id: $id, locale: $locale, preview: $preview) {
+    ...AmHeroBlockFields
+  }
+}
