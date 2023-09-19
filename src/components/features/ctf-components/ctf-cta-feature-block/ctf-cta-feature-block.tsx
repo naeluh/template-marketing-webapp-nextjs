@@ -27,13 +27,14 @@ export const CtaFeatureBlock = (props: AmCtaFeatureBlockieldsFragment) => {
               )}
             </div>
             <div className="who-we-are-cont-right">
-              <div className="who-we-are-video">
-                <div
-                  className={classes.backgroundImage}
-                  style={{
-                    backgroundImage: `url("${backgroundImage?.url}")`,
-                  }}
-                ></div>
+              <div
+                className="who-we-are-video"
+                style={
+                  {
+                    '--before-image': `transparent url('${backgroundImage?.url}') no-repeat`,
+                  } as React.CSSProperties
+                }
+              >
                 <div className="youtube-play-on-click">
                   <div className="youtube-play-on-click-container">
                     <a

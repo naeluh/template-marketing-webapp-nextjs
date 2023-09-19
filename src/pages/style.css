@@ -1,3 +1,11 @@
+:root {
+  --before-image: '';
+}
+
+.who-we-are-video::before {
+  background: var(--before-image);
+}
+
 .menu-holder nav .menu-item a:not(.menu-open-button) {
   font-size: 16px;
 }
